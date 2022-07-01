@@ -61,3 +61,7 @@ UPDATE addressbook SET BookName='Book2', BookType='Friends' WHERE first_name='ke
 UPDATE addressbook SET BookName='book3', BookType='Profession' WHERE first_name='Sherlock';
 UPDATE addressbook SET BookName='book3', BookType='Profession' WHERE first_name='Vladimir';
 SELECT * FROM addressbook;
+
+---UC10--Count by type--------------
+SELECT COUNT(first_name) AS CONTACTS FROM addressbook
+    WHERE BookType='Profession';
