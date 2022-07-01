@@ -65,3 +65,9 @@ SELECT * FROM addressbook;
 ---UC10--Count by type--------------
 SELECT COUNT(first_name) AS CONTACTS FROM addressbook
     WHERE BookType='Profession';
+
+---UC11--ADD INTO FRIENDS AND FAMILY-----------
+INSERT INTO addressbook VALUES
+('Shakira','Shamina','Borivali','Mumbai','Maharashtra',400098,'7452166','shakira@gmail.com','Book1','Family'),
+('Shakira','Shamina','Borivali','Mumbai','Maharashtra',400098,'7452166','shakira@gmail.com','Book2','Friends');
+SELECT * FROM addressbook;
