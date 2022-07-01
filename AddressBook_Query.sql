@@ -37,3 +37,17 @@ SELECT first_name,last_name FROM addressbook
 ---UC7--Count of address book by city and state----
 SELECT COUNT(city) AS COUNT_OF_ADDRESS_BOOK
     FROM addressbook WHERE city='london' AND state='england';
+
+---UC8--RETRIEVE ENTRIES ALPHABETICALLY BY NAME FOR A CITY----------
+INSERT INTO addressbook (first_name,last_name,address,city,state,zip,phone_no,email)
+    VALUES('Vladimir','Putina','3/40 Broadway Street','Moscow','Narnia',45001,'235461','v.putin@gmail.com'),
+            ('Jake','Peralta','99 Precinct','New York','USA',25679,'911','j.pera@gmail.com');
+SELECT * FROM addressbook;
+INSERT INTO addressbook (first_name,last_name,address,city,state,zip,phone_no,email)
+    VALUES('keya','lutina','yenyen','Hiroshima','japan',450981,'239871','ke.lut@gmail.com');
+INSERT INTO addressbook (first_name,last_name,address,city,state,zip,phone_no,email)
+    VALUES('rosa','lopa','andheri','New York','Narnia',25679,'235461','rosa@gmail.com');
+
+SELECT first_name,last_name FROM addressbook
+    WHERE city='new york'
+        ORDER By first_name asc;
