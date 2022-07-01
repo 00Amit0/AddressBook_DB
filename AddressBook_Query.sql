@@ -20,3 +20,8 @@ CREATE TABLE addressbook(
 INSERT INTO addressbook (first_name,last_name,address,city,state,zip,phone_no,email)
     VALUES('Vladimir','Putin','3/40, Broadway Street','Moscow','Narnia',989001,'2354618524','v.putin@gmail.com'),
         ('Sherlock','Holmes','Baker Street','London','England',567897,'7654874','sherlocked@gmail.com');
+
+---UC4--Edit existing contact using name-----------
+UPDATE addressbook SET zip=786532 
+    WHERE first_name='Sherlock' AND last_name='Holmes';
+SELECT * FROM addressbook;
