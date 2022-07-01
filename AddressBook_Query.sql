@@ -25,3 +25,7 @@ INSERT INTO addressbook (first_name,last_name,address,city,state,zip,phone_no,em
 UPDATE addressbook SET zip=786532 
     WHERE first_name='Sherlock' AND last_name='Holmes';
 SELECT * FROM addressbook;
+
+---UC5--Delete contact using person name-----------
+DELETE FROM addressbook WHERE first_name='Vladimir' AND last_name='Putin';
+SELECT * FROM addressbook;
