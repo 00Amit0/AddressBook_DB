@@ -33,3 +33,7 @@ SELECT * FROM addressbook;
 ---UC6--Retrieve a person from city or state-------
 SELECT first_name,last_name FROM addressbook 
     WHERE city='london' OR  state='Las Angeles';
+
+---UC7--Count of address book by city and state----
+SELECT COUNT(city) AS COUNT_OF_ADDRESS_BOOK
+    FROM addressbook WHERE city='london' AND state='england';
