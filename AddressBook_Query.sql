@@ -51,3 +51,13 @@ INSERT INTO addressbook (first_name,last_name,address,city,state,zip,phone_no,em
 SELECT first_name,last_name FROM addressbook
     WHERE city='new york'
         ORDER By first_name asc;
+
+---UC9--Alter to add name and type------------
+ALTER TABLE AddressBook
+ADD BookName VARCHAR(50), BookType VARCHAR(50);
+
+UPDATE addressbook SET BookName='Book1', BookType='Family' WHERE last_name='lopa'; 
+UPDATE addressbook SET BookName='Book2', BookType='Friends' WHERE first_name='keya' OR first_name='Jake';
+UPDATE addressbook SET BookName='book3', BookType='Profession' WHERE first_name='Sherlock';
+UPDATE addressbook SET BookName='book3', BookType='Profession' WHERE first_name='Vladimir';
+SELECT * FROM addressbook;
