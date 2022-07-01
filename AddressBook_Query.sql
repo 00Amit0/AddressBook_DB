@@ -29,3 +29,7 @@ SELECT * FROM addressbook;
 ---UC5--Delete contact using person name-----------
 DELETE FROM addressbook WHERE first_name='Vladimir' AND last_name='Putin';
 SELECT * FROM addressbook;
+
+---UC6--Retrieve a person from city or state-------
+SELECT first_name,last_name FROM addressbook 
+    WHERE city='london' OR  state='Las Angeles';
